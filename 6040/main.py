@@ -10,4 +10,4 @@ a를 b로 나눈 몫을 출력한다.
 
 a, b = input().split()
 
-print(int(int(a)/int(b)))
+print(int(int(a)/int(b))) # 또는 print(int(a)//int(b))
