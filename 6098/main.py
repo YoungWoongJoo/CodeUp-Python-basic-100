@@ -37,16 +37,16 @@ x=0
 y=0
 
 while True:
-	if x==8 and y==8:
+	if x==8 and y==8: #맨 아래의 가장 오른쪽에 도착한 경우
 		break
 	
-	if arr[1+x][1+y]==1:
+	if arr[1+x][1+y]==1: #더 이상 움직일 수 없는 경우
 		y-=1
 		x+=1
 		if arr[1+x][1+y]==1:
 			break
 
-	if arr[1+x][1+y]==2:
+	if arr[1+x][1+y]==2: #먹이를 찾은 경우
 		arr[1+x][1+y]=9
 		break
 
